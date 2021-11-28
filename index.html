@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <!-- icon addition -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <title>Trova rime by allibis</title>
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <div class="nav-wrapper center red darken-2" style="font-family: 'Lucida Handwriting', cursive; font-size: larger;">  
+                    <b>TROVA RIME</b>
+                </div>
+              </nav> 
+        </header>
+        <div class="container">
+            <textarea id="poesia" rows="10" style="height: 50%; border-color: red;" class="materialize-textarea"></textarea>
+            <div class="center">
+                <button class="btn waves-effect waves-light red darken-2" type="submit" name="action" id="submit">
+                    <i class="material-icons left">send</i> 
+                    INVIO
+                </button>
+                <button class="btn waves-effect waves-light red darken-2" type="reset" name="action" id="reset">
+                    <i class="material-icons left">delete</i> 
+                    RESET
+                </button>
+
+            </div>
+            <table class="striped">
+                <tbody>
+                    <tr>
+                        <td>
+                            rime baciate:
+                        </td>
+                        <td id="baciate">
+                            0
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            rime alternate:
+                        </td>
+                        <td id="alternate">
+                            0
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            rime incrociate:
+                        </td>
+                        <td id="incrociate">
+                            0
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        
+        </div>
+
+
+    </body>
+    <script src="./index.js"></script>
+</html>
